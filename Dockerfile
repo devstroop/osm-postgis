@@ -1,5 +1,8 @@
 FROM ubuntu:22.04
 
+# Set environment variable to prevent interactive prompts during install
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     wget \
