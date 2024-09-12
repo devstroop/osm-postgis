@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y \
     wget \
     gnupg2 \
     software-properties-common \
-    postgresql-client-14 \  # Matching version with the PostGIS container
-    osm2pgsql  # Install osm2pgsql for OSM data import
+    postgresql-client-14 \
+    osm2pgsql
 
 # Create a directory for OSM data
 RUN mkdir -p /data
